@@ -38,3 +38,15 @@ curl http://localhost:3001/mem
 curl http://localhost:3001/net > /dev/null
 ```
 
+## Add crontab on other server
+
+you can change the rule depending on your needs
+
+```bash
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+*/7 * * * * curl http://your-server-address:3001/cpu
+*/5 * * * * curl http://your-server-address:3001/mem
+*/9 * * * * curl http://your-server-address:3001/net > /dev/null
+```
