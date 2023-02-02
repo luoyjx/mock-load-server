@@ -46,7 +46,7 @@ you can change the rule depending on your needs
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-*/7 * * * * curl http://your-server-address:3001/cpu
-*/5 * * * * curl http://your-server-address:3001/mem
-*/9 * * * * curl http://your-server-address:3001/net > /dev/null
+*/3 * * * * curl http://your-server-address:3001/cpu
+*/4 * * * * curl http://your-server-address:3001/mem
+*/5 * * * * curl http://your-server-address:3001/net > /dev/null
 ```
